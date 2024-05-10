@@ -1,10 +1,7 @@
 <?php
-
-define('BASEURL', 'http://localhost/evoting/public');
-
-//database
-
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'evoting');
+$servername = 'localhost:3307';
+$username = 'root';
+$password = '';
+$db = 'evoting';
+$koneksi = mysqli_connect($servername, $username, $password, $db);
+?>

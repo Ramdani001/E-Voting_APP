@@ -1,11 +1,18 @@
 <?php
-//@$page = $_GET['page_admin'];
-//switch ($page) {
-//admin
-//	case 'member':
-//		include '../admin/main/pages/member/member.php';
-//		break;
-//	default:
-//		include '../admin/main/pages/home/home.php';
-//		break;
-//}
+@$page = $_GET['page'];
+switch ($page) {
+	//admin
+	case 'user':
+		include '../admin/pages/user/user.php';
+		break;
+	case 'member':
+		include '../admin/pages/member/member.php';
+		break;
+	case 'voting':
+		include '../admin/pages/voting/voting.php';
+		break;
+	default:
+		include '../admin/pages/home/home.php';
+		break;
+}
+?>
