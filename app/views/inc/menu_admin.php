@@ -1,7 +1,7 @@
 <?php
 @$page = $_GET['page'];
 switch ($page) {
-	//admin
+		//admin
 	case 'user':
 		include '../admin/pages/user/user.php';
 		break;
@@ -15,4 +15,3 @@ switch ($page) {
 		include '../admin/pages/home/home.php';
 		break;
 }
-?>

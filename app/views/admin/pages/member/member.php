@@ -3,8 +3,8 @@
 @$page = $_GET['aksi'];
 switch ($page) {
     default:
-    include 'show.php';
-    break;
+        include 'show.php';
+        break;
 }
 ?>
 <!-- page end-->

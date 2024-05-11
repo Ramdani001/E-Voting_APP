@@ -1,11 +1,9 @@
 <?php
 @session_start();
-if (@$_SESSION['email'])
-{
-  if (@!$_SESSION['tipe'] == "MEMBER")
-  {
-    header("location:");
-  }
+if (@$_SESSION['email']) {
+    if (@!$_SESSION['tipe'] == "MEMBER") {
+        header("location:");
+    }
 }
 include("../inc/config.php");
 
@@ -51,7 +49,7 @@ include("../inc/config.php");
         Preloader end
     ********************-->
 
-    
+
     <!--**********************************
         Main wrapper start
     ***********************************-->
@@ -78,9 +76,9 @@ include("../inc/config.php");
         <!--**********************************
             Header start
         ***********************************-->
-        <div class="header">    
+        <div class="header">
             <div class="header-content clearfix">
-                
+
                 <div class="nav-control">
                     <div class="hamburger">
                         <span class="toggle-icon"><i class="icon-menu"></i></span>
@@ -89,7 +87,7 @@ include("../inc/config.php");
                 <div class="header-right">
                     <ul class="clearfix">
                         <li class="icons dropdown">
-                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
                                 <span class="activity active"></span>
                                 <img src="images/user/1.png" height="40" width="40" alt="">
                             </div>
@@ -120,7 +118,7 @@ include("../inc/config.php");
         <!--**********************************
             Sidebar start
         ***********************************-->
-        <div class="nk-sidebar">           
+        <div class="nk-sidebar">
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
                     <li>
@@ -152,17 +150,17 @@ include("../inc/config.php");
         ***********************************-->
         <div class="content-body">
             <div class="container-fluid mt-3">
-            <?php
+                <?php
                 include '../inc/menu_member.php';
-            ?>
+                ?>
             </div>
             <!-- #/ container -->
         </div>
         <!--**********************************
             Content body end
         ***********************************-->
-        
-        
+
+
         <!--**********************************
             Footer start
         ***********************************-->
