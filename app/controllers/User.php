@@ -48,7 +48,7 @@ class User extends Controller
 
     public function getubah()
     {
-        echo json_encode($this->model('Userr_model')->getUserById($_POST['id']));
+        echo json_encode($this->model('Userr_model')->getUserById($_POST['id_user']));
     }
 
     public function ubah()

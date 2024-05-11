@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL', 'http://localhost/evoting/public');
+define('BASEURL', 'http://localhost/eyvote/public');
 
 //database
 

@@ -33,10 +33,10 @@
             <ul class="list-group">
                 <?php foreach ($data['users'] as $user) : ?>
                     <li class="list-group-item">
-                        <?= $user['nama']; ?>
-                        <a href="<?= BASEURL; ?>/user/detail/<?= $user['id']; ?>" class="badge text-bg-primary float-right ml-1">detail</a>
-                        <a href="<?= BASEURL; ?>/user/ubah/<?= $user['id']; ?>" class="badge text-bg-success float-right ml-1 tampilModalUbah" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $user['id']; ?>">ubah</a>
-                        <a href="<?= BASEURL; ?>/user/hapus/<?= $user['id']; ?>" class="badge text-bg-danger float-right ml-1" onclick="return confirm('Yakin?');">hapus</a>
+                        <?= $user['email']; ?>
+                        <a href="<?= BASEURL; ?>/user/detail/<?= $user['id_user']; ?>" class="badge text-bg-primary float-right ml-1">detail</a>
+                        <a href="<?= BASEURL; ?>/user/ubah/<?= $user['id_user']; ?>" class="badge text-bg-success float-right ml-1 tampilModalUbah" data-bs-toggle="modal" data-bs-target="#formModal" data-id_user="<?= $user['id_user']; ?>">ubah</a>
+                        <a href="<?= BASEURL; ?>/user/hapus/<?= $user['id_user']; ?>" class="badge text-bg-danger float-right ml-1" onclick="return confirm('Yakin?');">hapus</a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -54,18 +54,19 @@
             </div>
             <div class="modal-body">
                 <form action="<?= BASEURL; ?>/user/tambah" method="post">
-                    <input type="hidden" name="id" id="id">
-                    <div class="mb-3">
-                        <label for="nama" class="form-label">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama">
-                    </div>
+                    <input type="hidden" name="id_user" id="id_user">
+                    <input type="hidden" name="id_person" id="id_person">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="mb-3">
-                        <label for="no_telp" class="form-label">Nomor Telepon</label>
-                        <input type="number" class="form-control" id="no_telp" name="no_telp">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="status" class="form-label">status</label>
+                        <input type="number" class="form-control" id="status" name="status" value="1" readonly>
                     </div>
             </div>
             <div class="modal-footer">

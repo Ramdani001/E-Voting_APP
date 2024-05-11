@@ -23,10 +23,13 @@
                         <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>/index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= BASEURL; ?>/about">About</a>
+                        <a class="nav-link" href="<?= BASEURL; ?>/person">Person</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= BASEURL; ?>/user">User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= BASEURL; ?>/person/pict">Foto</a>
                     </li>
                 </ul>
             </div>
